@@ -46,7 +46,7 @@ function setMute(){mute=!mute;if(mute){if(cur){try{cur.stop()}catch(e){}cur=null
 // ===== TÀI KHOẢN GOOGLE + LƯU DỮ LIỆU =====
 // 1) Dán "Client ID" (loại Web application) lấy ở Google Cloud Console vào GOOGLE_CLIENT_ID.
 // 2) (Tuỳ chọn) lưu đám mây: dán apiKey + projectId của Firebase (đã bật Auth Google + Firestore).
-const GOOGLE_CLIENT_ID='',FIREBASE={apiKey:'',projectId:''};
+const GOOGLE_CLIENT_ID='1093502646518-6q8hl1jq0f2rmpi41pu2ah9foirrqv74.apps.googleusercontent.com',FIREBASE={apiKey:'',projectId:''};
 const DEF=()=>({w:0,own:[],eq:-1,un:0,gem:[0,0],lv:1,xp:0,t:0});
 let ACCT={id:'guest',name:'Khách',email:'',pic:''},accMsg='',accPic=null,FBS=null,cloudSt='',accDel=0,cloudT=0;
 try{const a=JSON.parse(localStorage.getItem('manoto_acct')||'null');if(a&&a.id)ACCT=a}catch(e){}
